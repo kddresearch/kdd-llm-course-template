@@ -1,60 +1,28 @@
-> [!CAUTION]
-> Replace all the placeholders with the correct information.
-> Remove this message only after you have replaced all the placeholders.
-> * means optional
+<div align="center">
+  
+# 🟣 Applied LLM Engineering
+**K-State Knowledge Discovery in Databases (KDD) Lab**
 
-# KDD - [Team] - [Project]
+[![Zone](https://img.shields.io/badge/Compute_Zone-1_(Local_Prototyping)-0056b3?style=for-the-badge)](https://k-state.instructure.com)
+[![Status](https://img.shields.io/badge/Course_Status-Active-2e7d32?style=for-the-badge)](https://github.com/kddresearch/kdd-llm-course-template)
+[![Protocol](https://img.shields.io/badge/Protocol-KEEP_FLYING-d64309?style=for-the-badge)](https://github.com/kddresearch/kdd-llm-course-template/issues)
 
-This is a ML research project for the KDD Research Team. The machine learning
-model and API was built using Python.
+*The execution substrate for CIS 530 / 730 Term Project Pathways.*
 
-[View More - KDDResearch.org](https://kddresearch.org/)
+</div>
 
-## Installation
+---
 
-Install the proper tools:
-- Docker
+## 🎯 System Overview
 
-Next, fill out all the required secrets:
+This repository is the authoritative **Zone 1 Execution Substrate** for the Applied LLM Engineering short course. It contains the Docker DevContainer configurations, Python dependencies, and baseline Jupyter notebooks required to deploy and evaluate open-weight Large Language Models strictly on local hardware.
 
-### /.env.local
-```env
-# Secrets
-```
+If you are a student in the course, your objective is to use this repository to establish a reproducible local environment, execute the sequential Lab requirements, and pass the resulting commit hashes through the artifact gates on Canvas.
 
-## Usage
+## 🚀 Quick Start: The Execution Pipeline
 
-### Run With Docker (Preferred)
+To begin Unit 1, you must provision your local environment by following these steps:
 
-> [!NOTE]
-> Provide the required secrets in the `.env.local` file before running the project.
-
-```bash
-docker run ghcr.io/kddresearch/project-template:latest -env-file .env.local
-```
-
-or
-
-```bash
-docker build -t project-template .
-
-docker run -p 3000:3000 project-template -env-file .env.local
-```
-
-View the console to see the result.
-
-## Contributing
-
-To contribute to this project, follow the instructions in `CONTRIBUTING.md`
-
-## Citation
-
-To cite this project, use `CITATION.cff`
-
-## Confidentiality: Internal
-
-> Access: KDD Members
-
-This repository should remain private and only accessible to KDD members. This
-repository contains sensitive information about KDD Research workflows and
-defaults. Do not share this repository with anyone outside of the KDD Research.
+1. **Fork the Substrate:** Click the `Fork` button at the top right of this page to create your own copy of this repository under your personal GitHub account.
+2. **Clone Your Fork:** ```bash
+   git clone [https://github.com/YOUR-USERNAME/kdd-llm-course-template.git](https://github.com/YOUR-USERNAME/kdd-llm-course-template.git)

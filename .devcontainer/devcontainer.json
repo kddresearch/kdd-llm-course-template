@@ -1,0 +1,218 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/base-ubuntu
+{
+	// Docker Container Name
+	"name": "[Team] - [Project]*- Dev Container",
+
+	// Use an image name from a Docker registry.
+	// Using Base Ubuntu. https://github.com/devcontainers/images/tree/main/src/base-ubuntu
+	//
+	// More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	// Or use a Dockerfile or Docker Compose file.
+	// "dockerFile": "Dockerfile", 					// Used for advance configuration
+	// "dockerComposeFile": "docker-compose.yml", 	// Used for launching side services (databases, etc.)
+													// with advanced configuration
+
+	// Features to add to the dev container.
+	// Uncomment the ones you want to use.
+	//
+	// More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/anaconda:1": {
+			"version": "latest"
+		},
+		// "ghcr.io/devcontainers/features/aws-cli:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/azure-cli:1": {
+		// 	"version": "latest"
+		// },
+		"ghcr.io/devcontainers/features/common-utils:2": {},
+		// "ghcr.io/devcontainers/features/desktop-lite:1": {
+		// 	"version": "latest",
+		// 	"noVncVersion": "1.2.0",
+		// 	"password": "noPassword",
+		// 	"webPort": "6080",
+		// 	"vncPort": "5901"
+		// },
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
+			"moby": true,
+			"installDockerBuildx": true,
+			"installDockerComposeSwitch": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		},
+		// "ghcr.io/devcontainers/features/dotnet:2": {
+		// 	"version": "latest"
+		// },
+		"ghcr.io/devcontainers/features/git:1": {
+			"ppa": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+			"autoPull": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		// "ghcr.io/devcontainers/features/go:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/hugo:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/java:1": {
+		// 	"installGradle": true,
+		// 	"version": "latest",
+		// 	"jdkDistro": "ms",
+		// 	"gradleVersion": "latest",
+		// 	"mavenVersion": "latest",
+		// 	"antVersion": "latest",
+		// 	"groovyVersion": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+		// 	"version": "latest",
+		// 	"helm": "latest",
+		// 	"minikube": "latest"
+		// },
+		// "ghcr.io/devcontainers/features/node:1": {
+		// 	"nodeGypDependencies": true,
+		// 	"installYarnUsingApt": true,
+		// 	"version": "lts",
+		// 	"pnpmVersion": "latest",
+		// 	"nvmVersion": "latest"
+		// },
+		"ghcr.io/devcontainers/features/nvidia-cuda:3": {
+			"cudaVersion": "12.5",
+			"cudnnVersion": "8.9.5.29"
+		},
+		// "ghcr.io/devcontainers/features/powershell:1": {
+		// 	"version": "latest"
+		// },
+		"ghcr.io/devcontainers/features/python:1": {
+			"installTools": true,
+			"optimize": true,
+			"version": "latest"
+		},
+		// "ghcr.io/devcontainers/features/rust:1": {
+		// 	"version": "latest",
+		// 	"profile": "complete",
+		// 	"targets": "aarch64-unknown-linux-gnu"
+		// },
+		// "ghcr.io/devcontainers/features/sshd:1": {
+		// 	"version": "latest"
+		// },
+		"ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {},
+		"ghcr.io/stuartleeks/dev-container-features/dev-tunnels:0": {},
+		// "ghcr.io/frntn/devcontainers-features/postman:1": {},
+		// "ghcr.io/frntn/devcontainers-features/prism:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/swift-server-community/swift-devcontainer-features/sqlite:1": {},
+		// "ghcr.io/azutake/devcontainer-features/go-packages-install:0": {},
+		// "ghcr.io/devcontainers-community/npm-features/prettier:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-community/npm-features/typescript:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/itsmechlark/features/postgresql:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/deno:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/gh-release:1": {
+		// 	"repo": "digitalocean/doctl",
+		// 	"binaryNames": "etcd,etcdctl",
+		// 	"version": "latest",
+		// 	"binLocation": "/usr/local/bin",
+		// 	"libLocation": "/usr/local/lib",
+		// 	"additionalFlags": "--no-filter-assets-by-platform"
+		// },
+		// "ghcr.io/devcontainers-extra/features/mysql-homebrew:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/pipenv:2": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/redis-homebrew:1": {
+		// 	"version": "latest"
+		// },
+		// "ghcr.io/devcontainers-extra/features/turborepo-npm:1": {
+		// 	"version": "latest"
+		// },
+		"ghcr.io/devcontainers-extra/features/vscode-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/vscode-server:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-extra/features/wget-homebrew:1": {
+			"version": "latest"
+		}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [3000],
+
+	// Use 'portsAttributes' to configure the behavior of forwarded ports.
+	// The example below will open a browser when the port 3000 is forwarded.
+	// "portsAttributes": {
+	// 	"3000": {
+	// 	  "label": "Dev Server",
+	// 	  "onAutoForward": "openBrowser"
+	// 	},
+	// 	// Services running along side the devcontainer, like databases, etc.
+	// 	// Can be defined in docker-compose.yml
+	// 	"5432": {
+	// 	  "label": "Postgres"
+	// 	}
+	// },
+
+	// Configure tool-specific properties.
+	"customizations": {
+		"vscode": {
+			// Add extensions to the container by clicking the settings gear
+			// on the Extension's Page, and selecting "Add to Dev Container".
+			// More info: https://code.visualstudio.com/docs/devcontainers/tutorial#_how-it-works
+			"extensions": [
+				"ms-python.python",
+				// "ms-vscode.vscode-node-azure-pack",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode-remote.remote-containers",
+				"github.vscode-github-actions",
+				"GitHub.copilot",
+				"eamodio.gitlens",
+				// "golang.go",
+				"ms-toolsai.jupyter",
+				"esbenp.prettier-vscode"
+			]
+		}
+	},
+
+	// Non-root user created for development. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "vscode",
+
+	// Uncomment to use specific mount points
+	//
+	// Can MASSIVELY improve performance on binary files, but should not be used for source code.
+	//
+	// More info: https://code.visualstudio.com/remote/advancedcontainers/improve-performance
+	// "mounts": [
+	//  // NodeJS
+	// 	"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+	//
+	//	// NextJS
+	// 	"source=${localWorkspaceFolderBasename}-nextjs,target=${containerWorkspaceFolder}/.next,type=volume"
+	//
+	//  // Python
+	// 	"source=${localWorkspaceFolderBasename}-pycache,target=${containerWorkspaceFolder}/__pycache__,type=volume"
+	// ],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pip3 install --user -r requirements.txt"
+}

@@ -3,7 +3,7 @@
 # 🟣 Applied LLM Engineering
 **K-State Knowledge Discovery in Databases (KDD) Lab**
 
-[![Zone](https://img.shields.io/badge/Compute_Zone-1_(Local_Prototyping)-0056b3?style=for-the-badge)](https://k-state.instructure.com)
+[![Zone](https://img.shields.io/badge/Compute_Zone-1_(Local_Prototyping)-0056b3?style=for-the-badge)](https://k-state.instructure.com/courses/32258/pages/llm-short-course)
 [![Status](https://img.shields.io/badge/Course_Status-Active-2e7d32?style=for-the-badge)](https://github.com/kddresearch/kdd-llm-course-template)
 [![Protocol](https://img.shields.io/badge/Protocol-KEEP_FLYING-d64309?style=for-the-badge)](https://github.com/kddresearch/kdd-llm-course-template/issues)
 
@@ -21,7 +21,9 @@ Your objective is to use this repository to establish a reproducible local envir
 
 ## ⚠️ The GitOps Mandate
 
-To keep our workflows industry-standard, **we do not host code on Canvas.** 1. **Fork & Clone:** You will fork this repository and do all your work in your own copy.
+To keep our workflows industry-standard, **we do not host code on Canvas.**
+
+1. **Fork & Clone:** You will fork this repository and do all your work in your own copy.
 2. **Containerize:** You will execute all assignments within the provided `.devcontainer`.
 3. **Commit & Submit:** You will submit your completed work by providing the exact GitHub commit URL to Canvas. 
 

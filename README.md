@@ -36,3 +36,17 @@ Let's get your local environment running for Unit 1:
 1. **Fork the Substrate:** Click the `Fork` button at the top right of this page to create your own copy of this repository under your personal GitHub account.
 2. **Clone Your Fork:** ```bash
    git clone [https://github.com/YOUR-USERNAME/kdd-llm-course-template.git](https://github.com/YOUR-USERNAME/kdd-llm-course-template.git)
+
+## 🛑 KEEP FLYING: Operations Policy
+
+In applied LLM engineering, hardware fails and CUDA crashes. That is a normal part of the process! If you encounter a hard blocker (like a Docker OOM Exit Code 137 or a library conflict), please follow the KEEP FLYING protocol:
+
+**dt = 24 Hours:** Please do not remain stuck on a technical issue for more than 24 calendar hours without escalating it.
+
+1. **Check the Runbooks:** Consult the specific Canvas Runbook or Troubleshooting Guide for your current module.
+2. **Execute Bounded Attempts:** Try to resolve the issue yourself up to 3 times, and take note of what you tried.
+3. **Pause & Commit:** Stop troubleshooting, and commit your current (even if broken) state to GitHub.
+4. **File an ABR:** Go to the Issues tab of your repository and submit an **Access Blocker Report (ABR)** using the provided template so we can help you fix it.
+5. **Pivot:** Immediately pivot to offline conceptual work (like designing your schemas or reading literature). Keep your momentum going!
+
+*Note: Do not use Canvas messaging for technical environment debugging. All execution issues must be tracked via GitHub.*
